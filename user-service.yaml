@@ -1,0 +1,16 @@
+
+server:
+  port: 7077
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/userservice_db
+    username: root
+    password: tiger
+  jpa:
+    hibernate:
+      ddl-auto: update show-sql=true
+management:
+  endpoints:
+    web: null
+    exposure: null
+    include: "*"
